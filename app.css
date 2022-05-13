@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width:80%;
+    height:80%;
+    
+    display:grid;
+    margin:auto;
+    border:2px solid red;
+    grid-template-columns: repeat (4,1fr);
+    grid-template-rows: repeat (2,300px);
+    grid-template-areas:
+    "one one two three"
+    "four five five three";
+
+}
+.test1{
+    grid-area:one;
+    padding:15px;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    background-color: aqua;
+}
+.test2{
+    grid-area:two;
+    padding:15px;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    background-color: ;
+}
+.test3{
+    grid-area:three;
+    padding:15px;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    background-color:purple
+}
+.test4{
+    grid-area:four;
+    padding:15px;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    background-color:brown;
+}
+.test5{
+    grid-area:five;
+    padding:15px;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    background-color:rgb(165, 42, 71);
+
+}
+.profile{
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 5px;
+}
